@@ -1,0 +1,183 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  height: 100vh;
+}
+
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-color: #fff;
+  color: #fff;
+  background-color: #fff;
+  margin: 3.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  color: #4d07c3;
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 2rem 5.5rem;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4rem;
+  border-style: solid;
+}
+
+.btn:hover {
+  background-color: #4d07c3;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Foto Perfil */
+.foto-perfil img {
+  width: 100%;
+  display: block;
+}
+
+/*  Informacion Perfil */
+.perfil-info {
+  position: relative;
+  background: #1c1565;
+  background: linear-gradient(#1c1565 0%, #6a00f9 100%);
+}
+
+.contenedor-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+}
+
+.contenedor-img.top {
+  top: 0;
+}
+
+.contenedor-img.bottom {
+  bottom: 0;
+}
+
+.perfil-info .contenedor-img img {
+  max-width: 100%;
+}
+
+.pefil-info-container {
+  position: relative;
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #fff;
+  z-index: 9;
+}
+
+.pefil-info-container .nombre {
+  font-size: 2.8rem;
+  line-height: 3.36rem;
+  font-weight: 600;
+}
+
+.pefil-info-container .profesion {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+}
+
+.pefil-info-container .descripcion {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.8rem 3rem 2.8rem;
+}
+
+.redes-sociales a {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border-color: #fff;
+  border-style: solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.redes-sociales a:hover {
+  background-color: #fff;
+  color: #4d07c3;
+}
+
+@media (min-width: 992px) {
+  .contenedor {
+    margin: 4rem 6rem;
+    height: 90%;
+    flex-direction: row-reverse;
+  }
+
+  .perfil-info {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pefil-info-container .nombre {
+    font-size: 4rem;
+  }
+
+  .pefil-info-container .profesion {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: top center;
+  }
+
+  .redes-sociales a {
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .redes-sociales {
+    padding: 0 10rem;
+  }
+}
